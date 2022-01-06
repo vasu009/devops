@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/circleci-python
     docker:
-      - image: "circleci/python:3.8"
+      - image: "circleci/python:3.8-buster-browsers-legacy"
     steps:
       - checkout
       - run: python3 main.py
